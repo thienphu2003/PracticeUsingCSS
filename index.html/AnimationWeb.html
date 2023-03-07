@@ -1,0 +1,113 @@
+<style>
+  .header {
+    height: 80px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .header img {
+    height: 60px;
+  }
+
+  .head-link {
+    height: 40px;
+    background-color: #666;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .head-link a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+
+  .head-link a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  .left-content {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .left-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .left-content li {
+    margin-bottom: 10px;
+  }
+
+  .left-content li a {
+    text-decoration: none;
+  }
+
+  .left-content li a:hover {
+    text-decoration: underline;
+  }
+
+  .right-content {
+    flex: 2;
+    margin-left: 20px;
+  }
+
+  .right-content h2 {
+    margin-top: 0;
+  }
+
+  .footer {
+    height: 60px;
+    background-color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  @media screen and (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+
+    .left-content {
+      margin-bottom: 20px;
+    }
+  }
+</style>
+
+<div class="header">
+  <img src="logo.png" alt="Logo">
+</div>
+<div class="head-link">
+  <a href="#">Trang chủ</a>
+  <a href="#">Danh sách video</a>
+  <a href="#">Giới thiệu</a>
+</div>
+<div class="content">
+  <div class="left-content">
+    <ul>
+      <li><a href="#">Video 1</a></li>
+      <li><a href="#">Video 2</a></li>
+      <li><a href="#">Video 3</a></li>
+    </ul>
+  </div>
+  <div class="right-content">
+    <h2>Video 1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor ipsum ac mauris lobortis pharetra. Sed commodo euismod est vitae euismod.</p>
+  </div>
+</div>
+<div class="footer">
+  &copy; 2023 Tên của bạn
+</div>
